@@ -1,0 +1,8 @@
+# modgodb database connection config
+[MongoDB]
+DBURL = "localhost:27017"
+DBName = "post"
+UserName = "poster"
+Password = "123456"
+Enable = true
+BlockChain = "matic"
