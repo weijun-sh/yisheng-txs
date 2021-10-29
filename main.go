@@ -6,7 +6,7 @@ import (
 
 	"github.com/anyswap/CrossChain-Bridge/cmd/utils"
 	"github.com/weijun-sh/yisheng-txs/params"
-	"github.com/weijun-sh/yisheng-txs/scanner"
+	"github.com/weijun-sh/yisheng-txs/yisheng"
 	"github.com/urfave/cli/v2"
 )
 
@@ -22,8 +22,8 @@ func initApp() {
 	app.HideVersion = true
 	app.Usage = "scan eth like blockchain"
 	app.Commands = []*cli.Command{
-		scanner.YishengCommand,
-		scanner.VersionCommand,
+		yisheng.YishengCommand,
+		yisheng.VersionCommand,
 	}
 	app.Flags = []cli.Flag{
 		utils.LogFileFlag,

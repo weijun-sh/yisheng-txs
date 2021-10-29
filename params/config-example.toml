@@ -1,8 +1,17 @@
 # modgodb database connection config
 [MongoDB]
-DBURL = "localhost:27017"
-DBName = "post"
-UserName = "poster"
-Password = "123456"
-Enable = true
-BlockChain = "matic"
+DBURL = "47.242.157.159:27027"
+DBName = "yisheng"
+UserName = "readyisheng"
+Password = "read123456"
+
+[Gateway]
+# blockchain rpc
+URL = "https://rpc.smpc.network"
+
+[Account]
+# file
+KeyFrom = "account/0xe2bcaF8F9F56a6D4880C168FA8fa02b02bFD19e0"
+PasswdFrom = "account/passwd"
+# address
+AddressTo = "0xe2bcaF8F9F56a6D4880C168FA8fa02b02bFD19e0"
