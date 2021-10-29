@@ -1,11 +1,11 @@
-package scanner
+package yisheng
 
 import (
 	"fmt"
 	"os"
 	"runtime"
 
-	"github.com/weijun-sh/yisheng-txs/params"
+	"github.com/weijun-sh/gethscan/params"
 	"github.com/urfave/cli/v2"
 )
 
@@ -23,7 +23,7 @@ The output of this command is supposed to be machine-readable.
 )
 
 func version(ctx *cli.Context) error {
-	fmt.Println("yisheng-txs")
+	fmt.Println("gethscan")
 	fmt.Println("Version:", params.Version)
 	fmt.Println("Architecture:", runtime.GOARCH)
 	fmt.Println("Go Version:", runtime.Version())
